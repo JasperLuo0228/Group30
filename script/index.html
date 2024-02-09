@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitchhike Mapping</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hitchhike Mapping</h1>
+        <div class="search-box">
+            <input type="text" id="start" placeholder="Starting Point">
+            <input type="text" id="end" placeholder="Destination">
+            <select id="options">
+                <option value="ridesharing">Ridesharing</option>
+                <option value="direct">Direct</option>
+                <option value="detour">Detour</option>
+            </select>
+            <button onclick="searchRoute()">Search</button>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
